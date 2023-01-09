@@ -1,0 +1,18 @@
+.sv__banner {
+    position: relative;
+}
+.banner-bg img {
+    width: 100%;
+    object-fit: cover;
+}
+.sv__heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner__may {
+    position: absolute;
+    bottom: -90px;
+    right: 0;
+}
