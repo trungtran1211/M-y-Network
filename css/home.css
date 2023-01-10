@@ -126,6 +126,11 @@
     position: relative;
     width: 528px;
 }
+.partner-avatar img {
+    width: 379px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 .list__single::after{
     content: url("../images/home/bg-avatar.png");
     position: absolute;
