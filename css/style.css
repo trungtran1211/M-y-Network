@@ -13,6 +13,12 @@
   font-family: 'SF-Pro-Rounded-Light';
   font-weight: 300;
 }
+@font-face {
+  src: url(../fonts/SF-Pro-Rounded-Semibold.otf) format("truetype");
+  font-family: 'SF-Pro-Rounded-Semibold';
+  font-weight: 300;
+}
+
 
 * {
   padding: 0;
@@ -20,9 +26,10 @@
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
+body {
+  overflow-x: hidden;
 }
+
 
 a {
   text-decoration: none;
@@ -31,12 +38,16 @@ a {
   --font-black: 'SF-Pro-Rounded-Black';
   --font-medium: 'SF-Pro-Rounded-Medium';
   --font-light: 'SF-Pro-Rounded-Light';
-  --font-inter: 'Inter';
+  --font-semibold: 'SF-Pro-Rounded-Semibold';
+  --font-inter: 'Inter', sans-serif;
+  --font-nunito: 'Nunito', sans-serif;
   --color-primary: #0EA5E9;
   --color-white: #FFFFFF;
   --color-slate: #1E293B;
 }
-
+.w-100 {
+  width: 100% !important;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -134,6 +145,9 @@ header {
 }
 
 /* ================= footer =================== */
+footer {
+  border-top: 1px solid #BAE6FD;
+}
 .footer-container {
   text-align: center;
 }

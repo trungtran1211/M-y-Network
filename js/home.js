@@ -41,7 +41,7 @@ $(document).ready(function() {
     //var $progressBarLabel = $( '.slider__label' );
     
     $slider_trend.on('beforeChange', function(event, slick, currentSlide, nextSlideTrend) {   
-      var calc = ( (nextSlideTrend+1) / slick.slideCount ) * 100;
+      var calc = ( (nextSlideTrend+3) / slick.slideCount ) * 100;
       
       $progresstrend
         .css('background-size', calc + '% 100%')

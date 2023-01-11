@@ -65,6 +65,9 @@
     outline: none;
     cursor: pointer;
 }
+.banner-btn:hover {
+    background: linear-gradient(89.99deg, #F5F9FF 0.01%, #E8F7FF 98.01%, #96C2FF 98.01%, #76AFFF 98.01%, #E7F5FF 98.01%, #E8F5FF 98.01%, #F4FBFF 98.01%);
+}
 .banner-btn img {
     margin-left: 15px;
 }
@@ -392,6 +395,10 @@
     border: none;
     outline: none;
     color: var(--color-white);
+    cursor: pointer;
+}
+.trend-btn:hover {
+    background: linear-gradient(91.91deg, #2999CB 2.93%, #1294B0 99.69%);
 }
 .trend-btn img {
     margin-left: 8px;
@@ -416,6 +423,7 @@
     max-width: 100%;
     padding: 34px 0 36px;
     background: linear-gradient(91.91deg, #65BEFF 4.44%, #18AAEC 99.69%);
+    z-index: 10;
 }
 .service-container {
     padding: 78px 61px 81px 41px;
@@ -444,6 +452,9 @@
     letter-spacing: 0.005em;
     color: var(--color-white);
     cursor: pointer;
+}
+.service-btn:hover {
+    background: #0C4A6E;
 }
 .service-container .service-btn img {
     margin-left: 7px;
