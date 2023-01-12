@@ -5,11 +5,24 @@
     width: 100%;
     object-fit: cover;
 }
-.sv__heading {
+.sv__banner-heading {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: var(--font-black);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #0C4A6E;
+    text-shadow: 4px 0 #fff, -4px 0 #fff, 0 4px #fff, 0 -4px #fff, 
+                3px 3px #fff, -3px -3px #fff, 3px -3px #fff, -3px 3px #fff
+}
+.sv__banner-heading span {
+    color: #0ea5e9;
 }
 .banner__may {
     position: absolute;
