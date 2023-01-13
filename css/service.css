@@ -1,5 +1,6 @@
 .sv__banner {
     position: relative;
+    margin-bottom: 47px;
 }
 .banner-bg img {
     width: 100%;
@@ -28,4 +29,311 @@
     position: absolute;
     bottom: -90px;
     right: 0;
+}
+.sv__content-heading {
+    font-family: var(--font-black);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 133.84%;
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: #0EA5E9;
+    position: relative;
+    margin-bottom: 48px;
+}
+.sv__content-heading span {
+    color: #0c4a6e;
+    position: relative;
+}
+.sv__content-heading span::after{
+    content: url("../images/service/maybay1.png");
+    position: absolute;
+    top: -10px;
+    left: 107%;
+    display: inline-block;
+}
+.sv__content-heading::before{
+    content: url("../images/service/maybay2.png");
+    position: absolute;
+    top: -10px;
+    right: 67%;
+    display: inline-block;
+}
+
+.sv__content-heading::after {
+    content:  "";
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 2px;
+    background: #0EA5E9;
+    border-radius: 34px;
+
+}
+#sv__content-nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 21px;
+}
+#sv__content-nav ul li {
+    outline: 1px solid #11c1eb;
+    border: 4px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+#sv__content-nav ul li:hover {
+    border: 4px solid #11c1eb;
+}
+ 
+#sv__content-nav ul li h3 a {
+    font-family: var(--font-black);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: #11c1eb;
+    display: block;
+    width: 173px;
+    padding: 4px 0;
+}
+#sv__content-nav ul li:hover h3 a  {
+    transform: scale(1.07);
+    transition: .3s linear;
+}
+#sv__content-nav li.active{
+    background: #11c1eb;
+}
+#sv__content-nav li.active h3 a {
+    color: var(--color-white);
+}
+#sv__content-nav {
+    margin-bottom: 45px;
+}
+
+
+/* =============Box Build=============== */
+.box1-container{
+    display: flex;
+    gap: 114px;
+    margin-bottom: 97px;
+    position: relative;
+}
+.box1-container::before {
+    content: url("../images/service/build/build-may.png");
+    position: absolute;
+    bottom: -90px;
+    left: -30px;
+}
+.box1-container::after {
+    content: url("../images/service/build/build-maybay.png");
+    position: absolute;
+    bottom: -15px;
+    right: 220px;
+}
+.sv__build-box1 .box1__left {
+    max-width: 585px;
+}
+.box-heading {
+    font-family: var(--font-black);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.005em;
+    color: #0EA5E9;
+    margin: 30px 0 18px;
+}
+.sv__build-box1 .box1__left ul {
+    margin-bottom: 45px;
+}
+.sv__build-box1 .box1__left ul li{
+    font-family: var(--font-medium);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.005em;
+
+    color: #1E293B;
+    margin-bottom: 11px;
+}
+.sv__build-box1 .box1__left ul li img {
+    margin-right: 13px;
+}
+.sv__build-box1 .box1__left-title {
+    font-family: var(--font-black);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.005em;
+    color: #0EA5E9;
+    margin-bottom: 18px;
+}
+.box-text {
+    font-family: var(--font-medium);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #000000;
+}
+.sv__build-box2 {
+    background: linear-gradient(91.91deg, #63D0FF 4.44%, #46BCF1 99.69%);
+    padding: 34px 0 36px;
+    margin-bottom: 48px;
+    position: relative;
+    z-index: 1;
+}
+.sv__build-box2::before {
+    content: url("../images/service/build/build-may3.png");
+    position: absolute;
+    bottom: -85px;
+    left: 100px;
+    z-index: -1;
+}
+.sv__build-box2::after {
+    content: url("../images/service/build/build-may2.png");
+    position: absolute;
+    top: -67px;
+    right: 50px;
+    z-index: -1;
+}
+.sv__build-box2 .box2-container {
+    max-width: 870px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 31px 96px;
+    background: linear-gradient(167.96deg, rgba(86, 225, 255, 0.8) 0%, rgba(80, 202, 255, 0) 100%);
+    border: 4px solid #63D0FF;
+    backdrop-filter: blur(5.5px);
+
+    border-radius: 40px;
+}
+.box-title {
+    font-family: var(--font-black);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #0284C7;
+    margin-bottom: 28px;
+    text-shadow: 4px 0 #fff, -4px 0 #fff, 0 4px #fff, 0 -4px #fff, 
+                3px 3px #fff, -3px -3px #fff, 3px -3px #fff, -3px 3px #fff
+}
+.sv__build-box2 .box-price {
+    font-family: var(--font-black);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: #FFFFFF;
+}
+.box-price span {
+    font-size: 24px;
+    line-height: 27.92px;
+}
+.box-price1 {
+    margin-bottom: 18px;
+}
+.box-price2 {
+    margin-bottom: 24px;
+}
+.box-note {
+    font-family: var(--font-black);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 116.34%;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+}
+.sv__build-box3 {
+    margin-bottom: 58px;
+}
+.sv__box3-container {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+.sv__box3-list {
+    display: flex;
+    gap: 0 189px;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+.sv__box3-content {
+    margin-top: -30px;
+}
+.title-box3 {
+    font-family: var(--font-black);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    
+    color: #0EA5E9;
+    margin-bottom: 12px;
+    display: block;
+}
+.box3-list{
+    list-style: initial;
+}
+.box3-list li {
+    font-family: var(--font-medium);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.005em;
+
+    color: #1E293B;
+}
+.box3-list li span {
+    font-family: var(--font-black);
+    font-weight: 900;
+}
+.sv__build-btn {
+    display: flex;
+    align-items: center;
+    padding: 17px 18px;
+    background: linear-gradient(180deg, #0CA2F7 11.27%, #48C7FF 104.75%);
+    border-radius: 30px;
+    font-family: var(--font-inter);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.sv__build-btn:hover {
+    background: linear-gradient(91.91deg, #2999CB 2.93%, #1294B0 99.69%);
+    border-radius: 30px;
+}
+.sv__build-btn img {
+    margin-left: 8px;
 }
