@@ -1,3 +1,6 @@
+img {
+    max-width: 100%;
+}
 .sv__banner {
     position: relative;
     margin-bottom: 47px;
@@ -215,7 +218,7 @@
     text-align: center;
     padding: 31px 96px;
     background: linear-gradient(167.96deg, rgba(86, 225, 255, 0.8) 0%, rgba(80, 202, 255, 0) 100%);
-    border: 4px solid #63D0FF;
+    border: 3px solid #63d0ff8e;
     backdrop-filter: blur(5.5px);
 
     border-radius: 40px;
@@ -233,7 +236,7 @@
     text-shadow: 4px 0 #fff, -4px 0 #fff, 0 4px #fff, 0 -4px #fff, 
                 3px 3px #fff, -3px -3px #fff, 3px -3px #fff, -3px 3px #fff
 }
-.sv__build-box2 .box-price {
+.box-price {
     font-family: var(--font-black);
     font-style: normal;
     font-weight: 900;
@@ -270,19 +273,22 @@
 .sv__box3-container {
     display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:space-between;
     flex-direction:column;
 }
-.sv__box3-list {
+.sv__box-list {
     display: flex;
-    gap: 0 189px;
-    justify-content: space-between;
+    gap: 0 170px;
+    justify-content: center;
     margin-bottom: 90px;
 }
-.sv__box3-content {
+.sv__box-item {
+    width: 33.333%;
+}
+.sv__box-content {
     margin-top: -30px;
 }
-.title-box3 {
+.title-box {
     font-family: var(--font-black);
     font-style: normal;
     font-weight: 900;
@@ -295,10 +301,10 @@
     margin-bottom: 12px;
     display: block;
 }
-.box3-list{
+.box-list{
     list-style: initial;
 }
-.box3-list li {
+.box-list li {
     font-family: var(--font-medium);
     font-style: normal;
     font-weight: 500;
@@ -308,11 +314,11 @@
 
     color: #1E293B;
 }
-.box3-list li span {
+.box-list li span {
     font-family: var(--font-black);
     font-weight: 900;
 }
-.sv__build-btn {
+.sv__btn {
     display: flex;
     align-items: center;
     padding: 17px 18px;
@@ -330,10 +336,179 @@
     outline: none;
     cursor: pointer;
 }
-.sv__build-btn:hover {
+.sv__btn:hover {
     background: linear-gradient(91.91deg, #2999CB 2.93%, #1294B0 99.69%);
     border-radius: 30px;
 }
-.sv__build-btn img {
+.sv__btn img {
     margin-left: 8px;
+}
+
+/* ================maintain================ */
+.sv__maintain1 {
+    background: linear-gradient(91.91deg, #63D0FF 4.44%, #46BCF1 99.69%);
+    background-size: 100% 367px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 45px;
+}
+.maintain__top {
+    display: flex;
+    gap: 44px;
+}
+.maintain__top-left {
+    width: 500px;
+    position: relative;
+}
+.maintain__top-left::before {
+    content: url("../images/service/maintain/maybay.png");
+    position: absolute;
+    bottom: 97px;
+    left: 135px;
+
+}
+.maintain__top-left::after {
+    content: url("../images/service/maintain/maintain-may1.png");
+    position: absolute;
+    bottom: -40px;
+    left: -110px;
+}
+.maintain__top-right {
+    width: 655px;
+    position: relative;
+}
+.maintain__top-right::before {
+    content: url("../images/service/maintain/maintain-may2.png");
+    position: absolute;
+    bottom: 177px;
+    right: -120px;
+}
+.maintain__top-right .right-box1 {
+    margin-left: 56px;
+    margin-bottom: 82px;
+}
+.maintain-title {
+    font-family: var(--font-black);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.005em;
+
+    color: #0EA5E9;
+    margin: 20px 0 25px;
+}
+.maintain__top-right .right-box2 {
+    padding: 31px 90px 26px;
+    background: linear-gradient(167.96deg, rgba(55, 219, 255, 0.8) 0%, rgba(80, 202, 255, 0.21) 100%);
+    backdrop-filter: blur(5.5px);
+    border-radius: 40px;
+    border: 3px solid #63d0ff8e;
+    text-align: center;
+}
+.maintain-list {
+    margin-top: 65px;
+    margin-bottom: 58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+/* ===========advise============ */
+.sv__advise1 {
+    background: linear-gradient(91.91deg, #63D0FF 4.44%, #46BCF1 99.69%);
+    background-size: 100% 367px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 45px;
+}
+.advise-container {
+    display: flex;
+    gap: 44px;
+}
+.advise__left {
+    width: 500px;
+    position: relative;
+}
+.advise__left::before {
+    content: url("../images/service/advise/advise-may2.png");
+    position: absolute;
+    left: -110px;
+    bottom: -85px;
+}
+.advise__left::after {
+    content: url("../images/service/advise/advise-maybay.png");
+    position: absolute;
+    left: 140px;
+    bottom: 52px;
+}
+.advise__right {
+    width: 655px;
+    position: relative;
+}
+.advise__right::before {
+    content: url("../images/service/advise/advise-may1.png");
+    position: absolute;
+    right: -115px;
+    bottom: 177px;
+}
+.advise__right-box1 {
+    margin-left: 56px;
+    margin-bottom: 78px;
+}
+.advise__right-box2 {
+    text-align: center;
+    padding: 31px 75px 55px;
+    background: linear-gradient(167.96deg, rgba(55, 219, 255, 0.8) 0%, rgba(80, 202, 255, 0.21) 100%);
+    backdrop-filter: blur(5.5px);
+    border-radius: 40px;
+    border: 3px solid #63d0ff8e;
+}
+
+.advise-list {
+    margin: 58px 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+/* ===============manage===================== */
+.sv__manage1 {
+    background: linear-gradient(91.91deg, #63D0FF 4.44%, #46BCF1 99.69%);
+    background-size: 100% 280px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 30px;
+}
+.manage-container {
+    display: flex;
+    gap: 48px;
+}
+.manage__left {
+    width: 655px;
+}
+.manage__left-box1 {
+    max-width: 599px;
+    margin-bottom: 100px;
+}
+.manage__left-box1 ul {
+    list-style: initial;
+    margin-left: 50px;
+}
+.manage__left-box1 ul li {
+    font-family: var(--font-medium);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #1E1E1E;
+}
+.manage__left-box2 {
+    background: linear-gradient(167.96deg, rgba(55, 219, 255, 0.8) 0%, rgba(80, 202, 255, 0.21) 100%);
+    backdrop-filter: blur(5.5px);
+    border-radius: 40px;
+    border: 3px solid #63d0ff8e;
+    padding: 46px 133px 25px;
 }
