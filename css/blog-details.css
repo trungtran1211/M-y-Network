@@ -1,0 +1,95 @@
+.blog__details-heading {
+    max-width: 1035px;
+    margin:  0 auto;
+    font-family: var(--font-black);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    background: linear-gradient(91.91deg, #25B9FC 2.93%, #0EC2E9 99.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 40px 0 34px;
+}
+.blog__details-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 21px;
+    border-bottom: 2px solid #D6D6D6;
+    gap: 48px;
+    position: relative;
+}
+.blog__details-header::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 102px;
+    height: 2px;
+    background: linear-gradient(91.91deg, #25B9FC 2.93%, #0EC2E9 99.69%);
+    border-radius: 0.943056px;
+}
+.details__header-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-medium);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.005em;
+    color: #0EA5E9;
+}
+.blog__details-categoty {
+    font-family: var(--font-medium);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+
+    color: #94A3B8;
+}
+.blog__details-content {
+    margin-top: 21px;
+    margin-bottom: 48px;
+}
+.details-text {
+    font-family: var(--font-medium);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: justify;
+    letter-spacing: 0.005em;
+    color: #1E293B;
+    margin-bottom: 17px;
+}
+.details-title {
+    font-family: var(--font-medium);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+    letter-spacing: 0.005em;
+    background: linear-gradient(91.91deg, #2999CB 2.93%, #1294B0 99.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin: 17px 0;
+}
+.blog__details-content img {
+    width: 100%;
+    border-radius: 30px;
+}
