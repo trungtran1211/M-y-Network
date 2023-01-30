@@ -61,3 +61,14 @@ $(document).ready(function() {
         
     });
 });
+
+
+$(document).ready(function(){
+    $('.creators-list').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows: false,
+        dots: true,
+    });
+  });
