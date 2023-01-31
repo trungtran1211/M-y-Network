@@ -11,7 +11,7 @@ $(document).ready(function(){
           settings: {
             arrows: false,
             centerMode: true,
-            centerPadding: '40px',
+            centerPadding: '20px',
             slidesToShow: 1
           }
         },
@@ -61,16 +61,33 @@ $(document).ready(function() {
     var $slider_trend = $('.trend__list');
     var $progresstrend = $('.progressTrend');
     //var $progressBarLabel = $( '.slider__label' );
+
+    const mediaQuery = window.matchMedia('(max-width: 768px)')
+    if (mediaQuery.matches) {
+      $slider_trend.on('beforeChange', function(event, slick, currentSlide, nextSlideTrend) {   
+        var calc = ( (nextSlideTrend+1) / slick.slideCount ) * 100;
+        
+        $progresstrend
+          .css('background-size', calc + '% 100%')
+          .attr('aria-valuenow', calc );
+        
+      //   $progressBarLabel.text( calc + '% completed' );
+      });
+    }
+
+    const mediaQuery2 = window.matchMedia('(min-width: 768px)')
+    if (mediaQuery2.matches) {
+      $slider_trend.on('beforeChange', function(event, slick, currentSlide, nextSlideTrend) {   
+        var calc = ( (nextSlideTrend+3) / slick.slideCount ) * 100;
+        
+        $progresstrend
+          .css('background-size', calc + '% 100%')
+          .attr('aria-valuenow', calc );
+        
+      //   $progressBarLabel.text( calc + '% completed' );
+      });
+    }
     
-    $slider_trend.on('beforeChange', function(event, slick, currentSlide, nextSlideTrend) {   
-      var calc = ( (nextSlideTrend+3) / slick.slideCount ) * 100;
-      
-      $progresstrend
-        .css('background-size', calc + '% 100%')
-        .attr('aria-valuenow', calc );
-      
-    //   $progressBarLabel.text( calc + '% completed' );
-    });
     
     $('.trend__list').slick({
         slidesToShow: 3,
@@ -80,7 +97,18 @@ $(document).ready(function() {
         speed: 2000, 
         autoplay: true,
         cssEase: 'ease',
-        
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerMode: true,
+              centerPadding: '20px',
+            }
+          },
+        ]  
     });
 });
 

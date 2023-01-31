@@ -370,5 +370,29 @@ main {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-}
+  }
+
+  /* Footer======================= */
+  .ft-top {
+    padding: 25px 0 27px;
+  }
+  .logo-footer {
+    margin-bottom: 13px;
+  }
+  .logo-footer img{
+    max-width: 145px;
+  }
+  .ft-text {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+  .list-social {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+  .list-social img {
+    max-width: 25px;
+  }
 }
