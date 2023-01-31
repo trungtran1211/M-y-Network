@@ -28,7 +28,7 @@
 
 body {
   overflow-x: hidden;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
 }
 
 img {
@@ -218,7 +218,7 @@ main {
   border-radius: 10px;
   padding: 4px 8px;
 }
-::placeholder {
+.search-bg ::placeholder {
   color: #38BDF8;
 }
 .hide {
