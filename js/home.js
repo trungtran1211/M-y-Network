@@ -1,3 +1,25 @@
+$(document).ready(function(){
+  $('.creators-list').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: false,
+      arrows: false,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        },
+      ]  
+  });
+});
+
+
 $(document).ready(function() {
     var $slider = $('.list__nav');
     var $progressBar = $('.progress');
@@ -63,12 +85,38 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function(){
-    $('.creators-list').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: false,
-        arrows: false,
-        dots: true,
-    });
-  });
+
+
+// Search
+
+const searchBtn = document.querySelector(".search-btn");
+const searchBox = document.querySelector(".search-box");
+const searchInput = document.querySelector(".hide");
+
+searchBtn.addEventListener("mouseover", func, false);
+function func()
+{ 
+   searchBox.classList.addClass("search-bg");
+}
+
+  // searchBox.classList.toggle("search-bg");
+  // searchInput.classList.toggle("show");
+
+// Xoá khoảng trắng aos
+
+$('[data-aos]').parent().addClass('hideOverflowOnMobile');
+
+
+// menu
+
+const btnmenu = document.querySelector(".iconmenu");
+const listmenu = document.querySelector(".main-menu");
+const btnclosemenu = document.querySelector(".menu-close");
+
+btnmenu.onclick = () => {
+  listmenu.classList.toggle("show-menu");
+}
+
+btnclosemenu.onclick = () => {
+  listmenu.classList.toggle("show-menu");
+}
