@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     $('.blog__listnews-list').slick({
         slidesToShow: 3,
@@ -6,12 +7,19 @@ $(document).ready(function(){
         nextArrow:"<button type='button' class='slick-next arrows pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
         responsive: [
             {
-              breakpoint: 768,
+              breakpoint: 1025,
               settings: {
-                slidesToShow: 1
+                slidesToShow: 2,
               }
             },
-           
+            {
+              breakpoint: 769,
+              settings: {
+                slidesToShow: 1,
+                centerMode: true,
+                centerPadding: '20px',
+              }
+            },
         ]
     });
   });

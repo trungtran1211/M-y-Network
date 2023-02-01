@@ -379,7 +379,7 @@ textarea.qs__form-control {
         align-items: center;
         letter-spacing: 0.005em;
         color: #475569;
-        max-width: 550px;
+        max-width: 80%;
     }
 }
 @media screen and (max-width: 768px){
@@ -433,7 +433,7 @@ textarea.qs__form-control {
         align-items: center;
         letter-spacing: 0.005em;
         color: #475569;
-        max-width: 284px;
+        max-width: 80%;
     }
     details > summary .qs__number {
         font-family: var(--font-black);
@@ -573,8 +573,20 @@ textarea.qs__form-control {
     }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 370px){
     .contact-name {
         margin: 0px 0px 0 5px;
+    }
+    details > summary .qs__title-list {
+        font-family: var(--font-semibold);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.005em;
+        color: #475569;
+        max-width: 70%;
     }
 }
