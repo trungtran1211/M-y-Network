@@ -88,11 +88,12 @@
         gap: 21px 0;
     }
     .banner {
-        background: url(../images/home/banner/bg-mb.png) no-repeat center center;
+        background: url(../images/home/banner/bg-mb.png) no-repeat;
         background-size: cover;
-        height: 557px;
+        height: 558px;
         position: relative;
         margin: 0 16px;
+        border-radius: 20px;
     }
     .banner-left {
         width: 100%;
@@ -130,6 +131,28 @@
         max-width: 354px;
     }
 }
+@media screen and (max-width: 376px) {
+    .banner {
+        background: url(../images/home/banner/bg-mb.png) no-repeat;
+        background-size: cover;
+        height: 505px;
+        position: relative;
+        margin: 0 16px;
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .banner {
+        background: url(../images/home/banner/bg-mb.png) no-repeat;
+        background-size: cover;
+        height: 460px;
+        position: relative;
+        margin: 0 16px;
+        border-radius: 20px;
+    }
+}
+
+
 /* ================================boxsv1================================ */
 .box1sv {
     margin-top: 46px;
@@ -279,6 +302,53 @@
         padding-bottom: 99px;
     }
 }
+@media screen and (max-width: 768px) {
+    .box1sv__row1 {
+        display: flex;
+        flex-direction: column;
+        gap: 18px 117px;
+        justify-content: center;
+        transform: translateY(-30px);
+        margin-bottom: -12px;
+    }
+    .box1sv__bg {
+        background: url(../images/home/service-box1/bg-svmb.png) no-repeat center ;
+        background-size: cover;
+        padding-bottom: 99px;
+    }
+    .box1sv__row2 {
+        display: flex;
+        flex-direction: column;
+        gap: 18px 117px;
+        justify-content: center;
+    }
+    .box1sv__row2 .box1sv__col:nth-child(2) {
+        margin-top: 0px;
+    }
+    .box1sv-heading {
+        font-family: var(--font-black);
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.005em;
+        color: #0EA5E9;
+        margin-bottom: 73px;
+    }
+    .box1sv {
+        margin-top: 29px;
+    }
+    .box1sv-btn {
+        padding: 11px 10px;
+        font-size: 11px;
+        line-height: 14px;
+        gap: 0 5px;
+    }
+    .box1sv-btn img{
+        max-width: 14px;
+    }
+}
 /* =================================contact=============================== */
 .contact {
     background: linear-gradient(180deg, #0CA2F7 11.27%, #48C7FF 104.75%);
@@ -386,7 +456,7 @@
     .contact {
         background: linear-gradient(180deg, #0CA2F7 11.27%, #48C7FF 104.75%);
         border-radius: 40px;
-        margin-top: 100px;
+        margin-top: -70px;
         padding: 14px 16px;
         position: relative;
     }
@@ -839,7 +909,8 @@
         display: flex;
         left: 0;
         max-width: 650px;
-        margin-top: 28px;
+        /* margin-top: 28px; */
+        margin: 28px auto 0;
     }
     .nav__item img {
         width: 44px;
@@ -903,7 +974,7 @@
 }
 /*======================== trending========================= */
 .trend {
-    margin-top: -280px;
+    margin-top: -320px;
     margin-bottom: 30px;
 }
 .trend__container .trend__heading{
@@ -1052,7 +1123,7 @@
 }
 @media screen and (max-width: 1024px) {
     .trend {
-        margin-top: 469px;
+        margin-top: 105px;
         margin-bottom: 30px;
     }
     .progressTrend {
@@ -1119,6 +1190,20 @@
         right: -25px;
     }
 }
+@media screen and (max-width: 768px) {
+    .trend {
+        margin-top: 150px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .trend {
+        margin-top: 500px;
+        margin-bottom: 30px;
+    }
+}
+
 @media screen and (max-width: 380px) {
     .trend {
         margin-top: 500px;
@@ -1163,6 +1248,13 @@
     }
 }
 
+
+@media screen and (min-width: 1441px) {
+    .parther-bg {
+        width: 100%;
+        height: 1100px;
+    }
+}
 
 /*=================== service ============================== */
 .service {
@@ -1236,6 +1328,9 @@
     margin-left: 7px;
 }
 @media screen and (max-width: 1024px) {
+    .service {
+        padding: 14px 16px;
+    }
     .service-container {
         padding: 24px 36px;
         display: flex;
@@ -1245,6 +1340,7 @@
         backdrop-filter: blur(5.5px);
         border-radius: 40px;
         flex-direction: column;
+        border: 2px solid #e8e8e899;
     }
     .service-container .avt {
         margin-bottom: 14px;
