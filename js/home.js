@@ -114,19 +114,6 @@ $(document).ready(function() {
 
 
 
-
-// Search
-
-const searchBtn = document.querySelector(".search-btn");
-const searchBox = document.querySelector(".search-box");
-const searchInput = document.querySelector(".hide");
-
-searchBtn.addEventListener("mouseover", func, false);
-function func()
-{ 
-   searchBox.classList.addClass("search-bg");
-}
-
   // searchBox.classList.toggle("search-bg");
   // searchInput.classList.toggle("show");
 
@@ -148,3 +135,10 @@ btnmenu.onclick = () => {
 btnclosemenu.onclick = () => {
   listmenu.classList.toggle("show-menu");
 }
+
+jQuery(document).ready(function($){
+  $('.search-box').hover(
+       function(){  $(this).addClass("search-bg") },
+       function(){ $(this).removeClass('search-bg') }
+  )
+});

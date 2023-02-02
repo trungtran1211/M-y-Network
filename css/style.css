@@ -31,6 +31,14 @@ body {
   background-color: #FFFFFF;
 }
 
+html, body{
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
 img {
   max-width: 100%;
 }
@@ -202,6 +210,15 @@ main {
   margin-top: 106px;
 }
 
+
+
+
+
+
+
+
+
+
 .search-box {
   display: flex;
   align-items: center;
@@ -211,6 +228,7 @@ main {
   max-height: 36px;
   max-width:174px;
   border: none;
+  cursor: pointer;
 }
 .search-bg {
   background: #FFFFFF;
@@ -237,6 +255,33 @@ main {
   background: transparent;
   cursor: pointer;
 }
+
+
+.search-box:hover #search:focus {
+  outline:none;
+  width: 100%;
+}
+.search-box:hover #search:focus > input#search {
+  outline:none;
+  width: 100%;
+  display: block;
+}
+ 
+.search-box:hover input#search{
+ display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .mb {
   display: none;
 }

@@ -277,6 +277,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-transform: lowercase;
 }
 
 .box1sv__col ul ul li:hover a {
@@ -1353,6 +1354,10 @@
     .parther-bg {
         width: 100%;
         height: 1100px;
+    }
+    .trend {
+        margin-top: -234px;
+        margin-bottom: 30px;
     }
 }
 
