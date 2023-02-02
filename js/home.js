@@ -132,7 +132,7 @@ function func()
 
 // Xoá khoảng trắng aos
 
-$('[data-aos]').parent().addClass('hideOverflowOnMobile');
+// $('[data-aos]').parent().addClass('hideOverflowOnMobile');
 
 
 // menu
