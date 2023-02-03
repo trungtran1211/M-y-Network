@@ -925,7 +925,9 @@
 .slick-slide .partner-avatar img {
     margin:  0 auto;
 }
-
+.nav__item.slick-slide.slick-current img {
+        border: 5px solid #25B9FC;
+ }
 .progress {
     display: block;
     width: 622px;
@@ -1013,6 +1015,9 @@
         object-fit: cover;
         border-radius: 50%;
         cursor: pointer;
+    }
+     .nav__item.slick-slide.slick-current img {
+        border: 2px solid #25B9FC;
     }
     .slick-prev img {
         max-width: 44px;
